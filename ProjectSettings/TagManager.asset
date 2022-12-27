@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Options
   - NPC
+  - Detect
   layers:
   - Default
   - TransparentFX
