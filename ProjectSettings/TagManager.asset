@@ -17,7 +17,7 @@ TagManager:
   - Ground Soft
   - Ground Hard
   - Post Processing
-  - 
+  - Fox
   - 
   - 
   - 
@@ -58,6 +58,9 @@ TagManager:
     locked: 0
   - name: Jalan
     uniqueID: 3077656113
+    locked: 0
+  - name: New After Jalan
+    uniqueID: 2435588301
     locked: 0
   - name: ForwardBackground
     uniqueID: 2673563481

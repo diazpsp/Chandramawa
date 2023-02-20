@@ -1,0 +1,2499 @@
+fileFormatVersion: 2
+guid: ebc4d0cdf04ab304998f5663459f645d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 528
+        width: 52
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ab52cf86f281f4bb7714d3ea97f0b2
+      internalID: -776775921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 528
+        width: 52
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23117808cad128f418d3f957fee6f4a5
+      internalID: 786492108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 528
+        width: 51
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3bf30ab514c404cbfae2e6809330c3
+      internalID: -1565305221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 528
+        width: 48
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b775f157d88b84184437a89c400626
+      internalID: -1230811459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_4
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 543
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97425c389952cf44a8179b684f672f28
+      internalID: 1537766202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_5
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 528
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3894780baf91c4697129e82147e51d
+      internalID: 974022631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_6
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 528
+        width: 51
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae13586daf6d438458571a63896f6709
+      internalID: -237410687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_7
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 528
+        width: 52
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07d71f9fbe1f4742a7a0fc920b1f7bd
+      internalID: 16298473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_8
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 528
+        width: 52
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ef842e2563a67408a10513ac5a78d6
+      internalID: 712503419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_9
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 528
+        width: 52
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04115c206a753df439fa4fcfc8fe7e78
+      internalID: -1878322923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_10
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 528
+        width: 50
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b76cd337fd8ca44bdbcceed60df871
+      internalID: 682550350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_11
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 540
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7665e952b62447b4bb04b15e95baa7c5
+      internalID: -304621322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_12
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 528
+        width: 50
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a41c7bbe2561a04bb22da1a79d6067f
+      internalID: 1738617508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_13
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 528
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527019437f66a7d438218be4f7b788ad
+      internalID: 20395910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_14
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 528
+        width: 52
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850b51e5bd3a59b4087655a1f73d8d0c
+      internalID: 1645341028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_15
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 534
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26acd115e916cf1488dd5147ff505136
+      internalID: -318553581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_16
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 480
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3072083148a33cf44b0d443d79cd6783
+      internalID: -305172672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_17
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 480
+        width: 53
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2bc4b28d1aaa6459f10c793889b988
+      internalID: -1551267943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_18
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 480
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7164685cebb0d2742836484e188001d7
+      internalID: -1796680970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_19
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 480
+        width: 50
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602ad89fbce11ce4d9cea674bf8dd4bd
+      internalID: -1767367465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_20
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 480
+        width: 53
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c82a7f0b374fac4cbad5c4b61f638e7
+      internalID: 1078608660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_21
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 480
+        width: 52
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db216f8360647b469ce9f1472870d70
+      internalID: 1859269098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_22
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 481
+        width: 52
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b00306ef072454abfbf87d266af31e
+      internalID: -1045787174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_23
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 480
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac723f4e5a49744ebd0ec3a4dc811a0
+      internalID: 509363744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 432
+        width: 56
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0270360a374cd924da4b72bb19f6f625
+      internalID: -538779069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_25
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 432
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e245d14d4378b4345ba3d792da2475f4
+      internalID: 765668654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_26
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 432
+        width: 51
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f8948e7bfc26b46b466157586b6fb6
+      internalID: -550324369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_27
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 432
+        width: 56
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6768e49bd2a0aa44a7bec0ee164d536
+      internalID: -2020151384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_28
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 432
+        width: 54
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab809b515a474c4395c0e5181436b60
+      internalID: -1076031950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_29
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 432
+        width: 53
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ba020ca356f5a49965df9835b4ef43
+      internalID: 419277721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_30
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 432
+        width: 55
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f625715a5cd372c43a6ddc77006b0ef8
+      internalID: -1446616279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_31
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 384
+        width: 43
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36fd880338570154eaed4295f3a06ac2
+      internalID: -1448905235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_32
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 384
+        width: 43
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa3638dc4dfeab4883329e476d99414
+      internalID: 406860672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_33
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 384
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda146c3d86db794c91b548dc2f499ef
+      internalID: -647408942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_34
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 384
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97517a79bf5ba348a34ffbd93591e91
+      internalID: -1362327695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_35
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 384
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c32394d22b9b040a4a7b87dbaf478f
+      internalID: -1027318534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_36
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 384
+        width: 43
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e72f86f947b574490352c732c4fa0f
+      internalID: -232296385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_37
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 336
+        width: 52
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236a477944fc0864290abd4215bb2e55
+      internalID: -1130941499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_38
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 336
+        width: 52
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb4c05407ef9034a8ca717c3950db3e
+      internalID: 462215067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_39
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 336
+        width: 51
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68de2e3af9a519c45978522b816b682f
+      internalID: 584411760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_40
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 336
+        width: 48
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb04e5ffeef8d3f42a39291140427424
+      internalID: 426997367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_41
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 336
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61dae9a33c7be7040b985d3246b20857
+      internalID: -194234479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_42
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 288
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c83cd299076f234999fd05b43b55935
+      internalID: 2111428361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_43
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 288
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bb78fa6fde95340aea65fe42c3c23e
+      internalID: 2143449878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_44
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 288
+        width: 46
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700e194365dc0a843ac151c9f13c3ecc
+      internalID: 971900829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_45
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 288
+        width: 47
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f113fd69237b84cb42aa39868fce36
+      internalID: -1052596588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_46
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 288
+        width: 47
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e71aea47c363844aaddb0cd46ab53a2
+      internalID: -664774151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_47
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 288
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4319fc165f8802c44973f5c3cccb06b8
+      internalID: 749821497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_48
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 288
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16eb3aff921afbf4b8d8b0114b973b99
+      internalID: 146790343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_49
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 240
+        width: 52
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662546e59c2a9f34c83f707b09c0f241
+      internalID: -596404645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_50
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 240
+        width: 52
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c1d49f305b1994c82c07be7ca5299f
+      internalID: 2043402340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_51
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 240
+        width: 51
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ae004fffb754245b5ef21b01b20482
+      internalID: 1416791041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_52
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 240
+        width: 48
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d139bc8f259a29c479040b3417e48085
+      internalID: -1819205079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_53
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 255
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda3bb7cadde00a45bbc318f94957111
+      internalID: -49769533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_54
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 240
+        width: 47
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ac74af78f94774cac1ee660bfcdcdb
+      internalID: 1311956186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_55
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 240
+        width: 51
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bfb1546ea298b41a2544463fbc8c17
+      internalID: 1755429442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_56
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 240
+        width: 52
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5abd8c086a01024cafc34197c5adfd3
+      internalID: -1406247359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_57
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 240
+        width: 52
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe775a806517f714fb16e0f45efbe44f
+      internalID: -1138734829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_58
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 240
+        width: 52
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012d869ea5c7fa34d8c29d20dec1a308
+      internalID: -160501458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_59
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 240
+        width: 50
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f492e7c99b51b6048822315866e5199a
+      internalID: -1099010988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_60
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 252
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0be9ccfa7f36cd48a79f7a1246f73a0
+      internalID: -821116890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_61
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 240
+        width: 50
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2302895f264a0b44e93ff5c805a1fb44
+      internalID: -267668978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_62
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 240
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f778b971b9bb91b498211507ceff4f02
+      internalID: -1163486815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_63
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 240
+        width: 52
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7b88eb790b07d43b3a44895e6c280b
+      internalID: -862861492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_64
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 246
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8b5fe0155d9d243919de5e4512f7f1
+      internalID: -1758298224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_65
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 192
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0e348e354f74848aef56d0203c4c4f
+      internalID: 822835034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_66
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 192
+        width: 53
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d68b39447c9ec44ba32326622e9d06
+      internalID: -923328371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_67
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 192
+        width: 53
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de996e1a687a86044972ad678aac761a
+      internalID: -1723750205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_68
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 192
+        width: 50
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434258f322fbfe644977e9aac9f2039a
+      internalID: -640172274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_69
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 192
+        width: 53
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d08447364ffb4644956528733b205d0
+      internalID: -1805088836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_70
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 192
+        width: 52
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21139cc7707eba84ca409a0ce5a96dc5
+      internalID: -278299329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_71
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 193
+        width: 52
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7770775d01f375429095ecc5afa5a5f
+      internalID: -867504645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_72
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 192
+        width: 52
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c40d1e111fa9ab449b85171ea73e489
+      internalID: -836596961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_73
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 144
+        width: 56
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 351574d9caba2a0499b2e45c3caa0115
+      internalID: -420355507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_74
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 144
+        width: 49
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94418ec2684a27a409a365de115f3eed
+      internalID: 1324320714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_75
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 144
+        width: 51
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1f5b75fa69ed241b7df3fdb290c353
+      internalID: -1077613342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_76
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 144
+        width: 56
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ad8c999b5bb6e44baabab5ba2757ef
+      internalID: 2114791788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_77
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 144
+        width: 54
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80a8630ce0699d4ba8e0aac9ebf47cc
+      internalID: 508362561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_78
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 144
+        width: 53
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ecb48d077def2a4d9032e8f362a0efd
+      internalID: -189110181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_79
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 144
+        width: 55
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a52ff326854a3c43aea8f5e7cd7ca09
+      internalID: 826202414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_80
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 96
+        width: 43
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdcf0f718cb65146b8eb2d5699d2560
+      internalID: -1501811804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_81
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 96
+        width: 43
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd84edd9283e79d478e2f72ab9fb41a8
+      internalID: -548859191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_82
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 96
+        width: 43
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc78995202e36747a4f9595d9a88750
+      internalID: -1812509865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_83
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 96
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1e7e047b43fea459c735d3c3d4b339
+      internalID: -1709831265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_84
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 96
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807640e651dfc394d81fafa932c4787e
+      internalID: -137981849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_85
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 96
+        width: 43
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb98ea7672fbf24389ab643c02be52f
+      internalID: -1890191636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_86
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 48
+        width: 52
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1fdbd83bd68b5c40b80df3313b953f8
+      internalID: -1360314300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_87
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 48
+        width: 52
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9adbf6cfd89c0e4c9c48ff42a3142d7
+      internalID: -1461072926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_88
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 48
+        width: 51
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f07c5318e3024c4291e802cadddf40e
+      internalID: 1586459064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_89
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 48
+        width: 48
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397db5d0d423c83469144221af9946f1
+      internalID: 304984942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_90
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 48
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aba153ed01df1643b262e852a76cf81
+      internalID: 181842261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_91
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 52
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6232713029f73404cb7bf9a0e49f5921
+      internalID: -475060098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_92
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 52
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19235b0da3c87994d968a8266644eb4d
+      internalID: 352923400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_93
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 51
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a044fe7f9137ae14da8bee8c40d6e911
+      internalID: 1246249550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_94
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 48
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1342e46ab2bdd4aa2a6c880ca08cef
+      internalID: -825882075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_95
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 15
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6d4a91d29d59b41ab9f69dbc059430
+      internalID: -811308397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_96
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 47
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7721cf0345cb7a43acfd66184df6067
+      internalID: 187475022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_97
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 0
+        width: 51
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f503732b170ebb04d9077fd12803394f
+      internalID: -2027308039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_98
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 19
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a4d814f1b2ab243b775b52ce81de66
+      internalID: -1009312696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_99
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 52
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e6ece4db761b949a12056a5ddb28cd
+      internalID: 850040744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_100
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 0
+        width: 52
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e07b01037bfde0469b4555e9fcac3d6
+      internalID: -515111404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_101
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 52
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e96d24e0aaae244b83b31010ea4d868
+      internalID: 816700281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_102
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 0
+        width: 50
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e1fbf1a1fcbc64cb4be2aed11dda7d
+      internalID: -1142290122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_103
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 50
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9669eeddb24d1eb48bd1c73c9cb6a6d4
+      internalID: 538708495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_104
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 0
+        width: 44
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0386dcaa7dd28844aae0ee39baaa9a0d
+      internalID: 185423414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_105
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 0
+        width: 52
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5204aed2b3d2c43ae721ce7bcb9927
+      internalID: 858279796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_106
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 12
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe3ae1323e82b841919ee307dd01a1d
+      internalID: -270030966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog_BlackWhiteSpots_107
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 6
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582150a35bfe36045ab683e3f13db0f2
+      internalID: -2093010350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dog_BlackWhiteSpots_0: -776775921
+      Dog_BlackWhiteSpots_100: -515111404
+      Dog_BlackWhiteSpots_97: -2027308039
+      Dog_BlackWhiteSpots_71: -867504645
+      Dog_BlackWhiteSpots_53: -49769533
+      Dog_BlackWhiteSpots_1: 786492108
+      Dog_BlackWhiteSpots_14: 1645341028
+      Dog_BlackWhiteSpots_85: -1890191636
+      Dog_BlackWhiteSpots_57: -1138734829
+      Dog_BlackWhiteSpots_70: -278299329
+      Dog_BlackWhiteSpots_62: -1163486815
+      Dog_BlackWhiteSpots_51: 1416791041
+      Dog_BlackWhiteSpots_16: -305172672
+      Dog_BlackWhiteSpots_77: 508362561
+      Dog_BlackWhiteSpots_99: 850040744
+      Dog_BlackWhiteSpots_15: -318553581
+      Dog_BlackWhiteSpots_64: -1758298224
+      Dog_BlackWhiteSpots_42: 2111428361
+      Dog_BlackWhiteSpots_7: 16298473
+      Dog_BlackWhiteSpots_21: 1859269098
+      Dog_BlackWhiteSpots_79: 826202414
+      Dog_BlackWhiteSpots_84: -137981849
+      Dog_BlackWhiteSpots_89: 304984942
+      Dog_BlackWhiteSpots_12: 1738617508
+      Dog_BlackWhiteSpots_38: 462215067
+      Dog_BlackWhiteSpots_96: 187475022
+      Dog_BlackWhiteSpots_105: 858279796
+      Dog_BlackWhiteSpots_50: 2043402340
+      Dog_BlackWhiteSpots_23: 509363744
+      Dog_BlackWhiteSpots_31: -1448905235
+      Dog_BlackWhiteSpots_56: -1406247359
+      Dog_BlackWhiteSpots_2: -1565305221
+      Dog_BlackWhiteSpots_39: 584411760
+      Dog_BlackWhiteSpots_55: 1755429442
+      Dog_BlackWhiteSpots_87: -1461072926
+      Dog_BlackWhiteSpots_107: -2093010350
+      Dog_BlackWhiteSpots_52: -1819205079
+      Dog_BlackWhiteSpots_88: 1586459064
+      Dog_BlackWhiteSpots_90: 181842261
+      Dog_BlackWhiteSpots_37: -1130941499
+      Dog_BlackWhiteSpots_5: 974022631
+      Dog_BlackWhiteSpots_34: -1362327695
+      Dog_BlackWhiteSpots_69: -1805088836
+      Dog_BlackWhiteSpots_66: -923328371
+      Dog_BlackWhiteSpots_28: -1076031950
+      Dog_BlackWhiteSpots_86: -1360314300
+      Dog_BlackWhiteSpots_82: -1812509865
+      Dog_BlackWhiteSpots_75: -1077613342
+      Dog_BlackWhiteSpots_10: 682550350
+      Dog_BlackWhiteSpots_93: 1246249550
+      Dog_BlackWhiteSpots_19: -1767367465
+      Dog_BlackWhiteSpots_98: -1009312696
+      Dog_BlackWhiteSpots_60: -821116890
+      Dog_BlackWhiteSpots_11: -304621322
+      Dog_BlackWhiteSpots_48: 146790343
+      Dog_BlackWhiteSpots_83: -1709831265
+      Dog_BlackWhiteSpots_58: -160501458
+      Dog_BlackWhiteSpots_61: -267668978
+      Dog_BlackWhiteSpots_32: 406860672
+      Dog_BlackWhiteSpots_41: -194234479
+      Dog_BlackWhiteSpots_8: 712503419
+      Dog_BlackWhiteSpots_76: 2114791788
+      Dog_BlackWhiteSpots_6: -237410687
+      Dog_BlackWhiteSpots_102: -1142290122
+      Dog_BlackWhiteSpots_17: -1551267943
+      Dog_BlackWhiteSpots_65: 822835034
+      Dog_BlackWhiteSpots_94: -825882075
+      Dog_BlackWhiteSpots_47: 749821497
+      Dog_BlackWhiteSpots_18: -1796680970
+      Dog_BlackWhiteSpots_33: -647408942
+      Dog_BlackWhiteSpots_44: 971900829
+      Dog_BlackWhiteSpots_91: -475060098
+      Dog_BlackWhiteSpots_72: -836596961
+      Dog_BlackWhiteSpots_25: 765668654
+      Dog_BlackWhiteSpots_68: -640172274
+      Dog_BlackWhiteSpots_95: -811308397
+      Dog_BlackWhiteSpots_92: 352923400
+      Dog_BlackWhiteSpots_101: 816700281
+      Dog_BlackWhiteSpots_36: -232296385
+      Dog_BlackWhiteSpots_9: -1878322923
+      Dog_BlackWhiteSpots_43: 2143449878
+      Dog_BlackWhiteSpots_30: -1446616279
+      Dog_BlackWhiteSpots_45: -1052596588
+      Dog_BlackWhiteSpots_78: -189110181
+      Dog_BlackWhiteSpots_3: -1230811459
+      Dog_BlackWhiteSpots_67: -1723750205
+      Dog_BlackWhiteSpots_22: -1045787174
+      Dog_BlackWhiteSpots_46: -664774151
+      Dog_BlackWhiteSpots_4: 1537766202
+      Dog_BlackWhiteSpots_103: 538708495
+      Dog_BlackWhiteSpots_40: 426997367
+      Dog_BlackWhiteSpots_24: -538779069
+      Dog_BlackWhiteSpots_54: 1311956186
+      Dog_BlackWhiteSpots_13: 20395910
+      Dog_BlackWhiteSpots_29: 419277721
+      Dog_BlackWhiteSpots_35: -1027318534
+      Dog_BlackWhiteSpots_59: -1099010988
+      Dog_BlackWhiteSpots_27: -2020151384
+      Dog_BlackWhiteSpots_26: -550324369
+      Dog_BlackWhiteSpots_20: 1078608660
+      Dog_BlackWhiteSpots_73: -420355507
+      Dog_BlackWhiteSpots_80: -1501811804
+      Dog_BlackWhiteSpots_49: -596404645
+      Dog_BlackWhiteSpots_81: -548859191
+      Dog_BlackWhiteSpots_74: 1324320714
+      Dog_BlackWhiteSpots_63: -862861492
+      Dog_BlackWhiteSpots_106: -270030966
+      Dog_BlackWhiteSpots_104: 185423414
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
