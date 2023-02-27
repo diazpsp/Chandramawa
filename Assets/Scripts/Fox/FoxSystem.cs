@@ -15,6 +15,7 @@ public class FoxSystem : MonoBehaviour
     public bool disableRightDetector = false;
     public Rigidbody2D rb;
     public Animator anim;
+    public GameObject player;
     public Transform target;
     public float minimumDistance;
     public float transformStay;
@@ -30,7 +31,8 @@ public class FoxSystem : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         speedTemp = speed;
-        // target = GameObject.Find("Chandra");
+        player = GameObject.Find("Chandra");
+        target = player.GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -75,6 +77,8 @@ public class FoxSystem : MonoBehaviour
         }
         else{
            if(isLeftTrigger == true){
+            
+           
                 move = new Vector2(7 * speedTemp,0)*Time.deltaTime;
                 // move = new Vector2(10,0);
                 rb.velocity = move;
@@ -83,6 +87,7 @@ public class FoxSystem : MonoBehaviour
                 transform.localScale =new Vector3(1,1,1) ; 
                 StartCoroutine(EAKOS(2));
                 disableRightDetector = true;
+                Debug.Log("Move to the right");
             }
              if(isRightTrigger == true){
                  move = new Vector2(-7 * speedTemp,0)*Time.deltaTime;
@@ -91,8 +96,8 @@ public class FoxSystem : MonoBehaviour
                 // move = new Vector2(-10,0);
                 anim.SetBool("Walking",isIdle);
                 // rb.AddForce(move*speedTemp * Time.deltaTime);
-                StartCoroutine(EAKOS(3));
-                Debug.Log("AEas");
+                StartCoroutine(EAKOS(2));
+                Debug.Log("Move to the left");
             }
             if(!isRightTrigger&&!isLeftTrigger){
                  move = new Vector2(-7 * speedTemp,0)*Time.deltaTime;
@@ -102,7 +107,7 @@ public class FoxSystem : MonoBehaviour
                 anim.SetBool("Walking",isIdle);
                 // rb.AddForce(move*speedTemp * Time.deltaTime);
                 StartCoroutine(EAKOS(5));
-                Debug.Log("EA");
+                Debug.Log("!isRightTrigger&&!isLeftTrigger");
             }
         }
     }
@@ -136,6 +141,7 @@ public class FoxSystem : MonoBehaviour
         yield return new WaitForSeconds(time);
         isIdle = false;
         isLeftTrigger = false;
+        isRightTrigger = false;
         anim.SetBool("Walking",isIdle);
         Debug.Log("MASOK EAKOS");
     }

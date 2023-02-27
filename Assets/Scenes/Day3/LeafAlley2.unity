@@ -2994,6 +2994,7 @@ MonoBehaviour:
   disableRightDetector: 0
   rb: {fileID: 0}
   anim: {fileID: 0}
+  player: {fileID: 0}
   target: {fileID: 574772079}
   minimumDistance: 0
   transformStay: 0
