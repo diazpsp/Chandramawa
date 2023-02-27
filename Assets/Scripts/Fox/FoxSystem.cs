@@ -17,6 +17,8 @@ public class FoxSystem : MonoBehaviour
     public Animator anim;
     public Transform target;
     public float minimumDistance;
+    public float transformStay;
+    float accel;
     // RaycastHit2D hit;
     // RaycastHit2D hit2;
     // public float distance;
@@ -34,6 +36,7 @@ public class FoxSystem : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+       
         // hit = Physics2D.Raycast(transform.position,transform.right,distance);
         // hit2 = Physics2D.Raycast(transform.position,-transform.right,distance);
 
@@ -41,6 +44,8 @@ public class FoxSystem : MonoBehaviour
         //     Debug.DrawRay(transform.position,hit2.point,Color.red);
         //     Debug.Log("hit");
         // }
+        
+
         if (!isIdle){
             // if(Vector2.Distance(transform.position, target.position) < minimumDistance){
             //     isIdle = true;
@@ -63,32 +68,40 @@ public class FoxSystem : MonoBehaviour
                 waitTime = startWaitTime;
             }else{
                 waitTime -= Time.deltaTime;
+                disableRightDetector = false;
             }
             
 
         }
         else{
            if(isLeftTrigger == true){
-                move = new Vector2(10 * speedTemp,0)*Time.deltaTime;
+                move = new Vector2(7 * speedTemp,0)*Time.deltaTime;
+                // move = new Vector2(10,0);
                 rb.velocity = move;
                 anim.SetBool("Walking",isIdle);
                 // rb.AddForce(move*speedTemp * Time.deltaTime);
                 transform.localScale =new Vector3(1,1,1) ; 
-                StartCoroutine(EAKOS());
+                StartCoroutine(EAKOS(2));
                 disableRightDetector = true;
             }
              if(isRightTrigger == true){
-                move = new Vector2(-10,0);
+                 move = new Vector2(-7 * speedTemp,0)*Time.deltaTime;
+                  rb.velocity = move;
+                transform.localScale = new Vector3(-1,1,1) ; 
+                // move = new Vector2(-10,0);
                 anim.SetBool("Walking",isIdle);
-                rb.AddForce(move*speedTemp * Time.deltaTime);
-                isMoving = true;
+                // rb.AddForce(move*speedTemp * Time.deltaTime);
+                StartCoroutine(EAKOS(3));
                 Debug.Log("AEas");
             }
             if(!isRightTrigger&&!isLeftTrigger){
-                move = new Vector2(-10,0);
+                 move = new Vector2(-7 * speedTemp,0)*Time.deltaTime;
+                  rb.velocity = move;
+                transform.localScale = new Vector3(-1,1,1) ; 
+                // move = new Vector2(-10,0);
                 anim.SetBool("Walking",isIdle);
-                rb.AddForce(move*speedTemp * Time.deltaTime);
-                isMoving = true;
+                // rb.AddForce(move*speedTemp * Time.deltaTime);
+                StartCoroutine(EAKOS(5));
                 Debug.Log("EA");
             }
         }
@@ -107,25 +120,39 @@ public class FoxSystem : MonoBehaviour
     }
 
     IEnumerator ChangetoRight(){
-        speedTemp = 0; 
-        move = new Vector2(0,0);
-        Debug.Log("sped 0");
-             rb.AddForce(move*0*Time.deltaTime);
-              transform.localScale =new Vector3(1,1,1) ; 
+        // speedTemp = 0; 
+        // move = new Vector2(0,0);
+        // Debug.Log("sped 0");
+        //      rb.AddForce(move*0*Time.deltaTime);
+        //       transform.localScale =new Vector3(1,1,1) ; 
          yield return new WaitForSeconds(1f);
-          speedTemp = speed; 
-                 move = new Vector2(10,0);
+        //   speedTemp = speed; 
+        //          move = new Vector2(10,0);
            
-            rb.AddForce(move*speedTemp * Time.deltaTime);
+        //     rb.AddForce(move*speedTemp * Time.deltaTime);
             Debug.Log(":Sea");
     }
-    IEnumerator EAKOS(){
-        yield return new WaitForSeconds(1);
+    IEnumerator EAKOS(float time){
+        yield return new WaitForSeconds(time);
         isIdle = false;
         isLeftTrigger = false;
         anim.SetBool("Walking",isIdle);
         Debug.Log("MASOK EAKOS");
     }
+
+    // void Turn(){
+    //     accel = rb.velocity.magnitude;
+    //     if(accel < 0.5f){
+    //         transformStay = transform.position.x;
+    //         if()
+    //         
+    //         Debug.Log("KIRI YU");
+    //     }
+    //     if(){
+    //         transform.localScale = new Vector3(1,1,1) ; 
+    //         Debug.Log("KAANNAAn");
+    //     }
+    // }
 
     // IEnumerator IdleTime(){
 

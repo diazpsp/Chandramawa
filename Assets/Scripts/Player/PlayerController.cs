@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioSource audioJump;
     public bool isGroundHard;
 
-    private Rigidbody2D controllerRigidbody;
+    public Rigidbody2D controllerRigidbody;
     private Collider2D controllerCollider;
     private LayerMask softGroundMask;
     private LayerMask hardGroundMask;

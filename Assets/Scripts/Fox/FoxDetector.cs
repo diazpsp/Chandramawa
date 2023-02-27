@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class FoxDetector : MonoBehaviour
 {
-   
+   public GameObject player;
+   public PlayerController playerCon;
      public FoxSystem Fox;
      public GameObject fox;
     // Start is called before the first frame update
    void Start(){
+    player = GameObject.Find("Chandra");
+    playerCon = player.GetComponent<PlayerController>();
     fox = GameObject.Find("Fox");
     Fox = fox.GetComponent<FoxSystem>();
    }
-    void OnTriggerEnter2D(Collider2D col){
-        if(col.gameObject.tag == "Player"){
+    void OnTriggerStay2D(Collider2D col){
+        if(col.gameObject.tag == "Player" && playerCon.controllerRigidbody.velocity.magnitude >0.1f){
             Fox.isLeftTrigger = true;
             Debug.Log("Ae");
         }
