@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoxSystem : MonoBehaviour
+public class VersiKecentangSemua : MonoBehaviour
 {
-    public float startWaitTime;
+                                        // TAPI BOONGGGG. INI VERSI NORMAL DARI KANAN
+   public float startWaitTime;
     public float waitTime;
     public float speed;
-    public float speedTemp;
     public bool isIdle = false;
     public bool isLeftTrigger = false;
     public bool isRightTrigger = false;
-    public bool isMoving = false;
-    public bool disableRightDetector = false;
     public Rigidbody2D rb;
     public Animator anim;
     public Transform target;
@@ -27,7 +25,6 @@ public class FoxSystem : MonoBehaviour
         waitTime = startWaitTime;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        speedTemp = speed;
         // target = GameObject.Find("Chandra");
     }
 
@@ -50,7 +47,6 @@ public class FoxSystem : MonoBehaviour
             if(isLeftTrigger){
                isIdle = true;
                 waitTime = startWaitTime;
-                disableRightDetector = true;
             }
              if(isRightTrigger){
               isIdle = true;
@@ -68,28 +64,22 @@ public class FoxSystem : MonoBehaviour
 
         }
         else{
-           if(isLeftTrigger == true){
-                move = new Vector2(10 * speedTemp,0)*Time.deltaTime;
-                rb.velocity = move;
+           if(isLeftTrigger){
+                move = new Vector2(10,0);
                 anim.SetBool("Walking",isIdle);
-                // rb.AddForce(move*speedTemp * Time.deltaTime);
-                transform.localScale =new Vector3(1,1,1) ; 
-                StartCoroutine(EAKOS());
-                disableRightDetector = true;
+                rb.AddForce(move*speed * Time.deltaTime);
+                
             }
-             if(isRightTrigger == true){
+             if(isRightTrigger){
                 move = new Vector2(-10,0);
                 anim.SetBool("Walking",isIdle);
-                rb.AddForce(move*speedTemp * Time.deltaTime);
-                isMoving = true;
-                Debug.Log("AEas");
+                rb.AddForce(move*speed * Time.deltaTime);
+                
             }
-            if(!isRightTrigger&&!isLeftTrigger){
+            else{
                 move = new Vector2(-10,0);
                 anim.SetBool("Walking",isIdle);
-                rb.AddForce(move*speedTemp * Time.deltaTime);
-                isMoving = true;
-                Debug.Log("EA");
+                rb.AddForce(move*speed * Time.deltaTime);
             }
         }
     }
@@ -97,34 +87,6 @@ public class FoxSystem : MonoBehaviour
         // if(Vector2.Distance(transform.position, target.position) < minimumDistance){
 
         // }
-        if(isMoving == true && transform.localScale.x == -1 && isLeftTrigger){
-            //kok TRUE semua ya bool nya?
-            
-            StartCoroutine(ChangetoRight());
-           
-
-        }
-    }
-
-    IEnumerator ChangetoRight(){
-        speedTemp = 0; 
-        move = new Vector2(0,0);
-        Debug.Log("sped 0");
-             rb.AddForce(move*0*Time.deltaTime);
-              transform.localScale =new Vector3(1,1,1) ; 
-         yield return new WaitForSeconds(1f);
-          speedTemp = speed; 
-                 move = new Vector2(10,0);
-           
-            rb.AddForce(move*speedTemp * Time.deltaTime);
-            Debug.Log(":Sea");
-    }
-    IEnumerator EAKOS(){
-        yield return new WaitForSeconds(1);
-        isIdle = false;
-        isLeftTrigger = false;
-        anim.SetBool("Walking",isIdle);
-        Debug.Log("MASOK EAKOS");
     }
 
     // IEnumerator IdleTime(){
