@@ -16,7 +16,7 @@ public class FoxDetectorTwo : MonoBehaviour
     Fox = fox.GetComponent<FoxSystem>();
    }
     void OnTriggerStay2D(Collider2D col){
-        if(col.gameObject.tag == "Player"  && playerCon.controllerRigidbody.velocity.magnitude > 0.1f){
+        if(col.gameObject.name == "Chandra"  && playerCon.controllerRigidbody.velocity.magnitude > 0.1f){
             if(Fox.disableRightDetector == false){
                 Fox.isRightTrigger = true;
             }

@@ -77,17 +77,18 @@ public class FoxSystem : MonoBehaviour
         }
         else{
            if(isLeftTrigger == true){
-            
+             
            
-                move = new Vector2(7 * speedTemp,0)*Time.deltaTime;
-                // move = new Vector2(10,0);
-                rb.velocity = move;
-                anim.SetBool("Walking",isIdle);
-                // rb.AddForce(move*speedTemp * Time.deltaTime);
-                transform.localScale =new Vector3(1,1,1) ; 
-                StartCoroutine(EAKOS(2));
-                disableRightDetector = true;
-                Debug.Log("Move to the right");
+                    move = new Vector2(7 * speedTemp,0)*Time.deltaTime;
+                    // move = new Vector2(10,0);
+                    rb.velocity = move;
+                    anim.SetBool("Walking",isIdle);
+                    // rb.AddForce(move*speedTemp * Time.deltaTime);
+                    transform.localScale =new Vector3(1,1,1) ; 
+                    StartCoroutine(EAKOS(2));
+                    disableRightDetector = true;
+                    Debug.Log("Move to the right");
+
             }
              if(isRightTrigger == true){
                  move = new Vector2(-7 * speedTemp,0)*Time.deltaTime;
