@@ -6,7 +6,9 @@ public class ObjectActivator : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject.name == "Chandra"){
         transform.GetChild(0).gameObject.SetActive(true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)

@@ -36,7 +36,7 @@ public class BirdSystem : MonoBehaviour
     private void FixedUpdate()
     {
        if(isOnCollider){
-        StartCoroutine(FlyDirection());
+       FlyAway();
        }
     
     }
@@ -50,9 +50,9 @@ public class BirdSystem : MonoBehaviour
     //    y = Random.Range(0, 3);
         // move = new Vector2(x,y);
         if(gameObject.transform.localScale.x < 0){
-        transform.position = Vector2.MoveTowards (transform.position, new Vector2(-6.54f, 13.75f), speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards (transform.position, new Vector2(-12.8f,23.99f), speed * Time.deltaTime);
         }else{
-            transform.position = Vector2.MoveTowards (transform.position, new Vector2(9.56f, 9.53f), speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards (transform.position, new Vector2(36.93f, 9.53f), speed * Time.deltaTime);
         }
         //  bird.velocity = new Vector2(x * speed *Time.deltaTime,y * speed * Time.deltaTime);
         
@@ -60,21 +60,22 @@ public class BirdSystem : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D col){
-        if(col.gameObject.tag == "Player"){
+        if(col.gameObject.name == "Chandra"){
             isOnCollider = true;
             if (Player.transform.localScale.x <0.1){
-            gameObject.transform.localScale = new Vector3(-0.15f, 0.15f, 0.15f);
+            gameObject.transform.localScale = new Vector3(-0.4f,0.4f,0.4f);
             anim.SetTrigger("triggerNear");
             
         }
         else {
-            gameObject.transform.localScale = new Vector3(0.15f, 0.15f, 0.15f);
+            gameObject.transform.localScale = new Vector3(0.4f,0.4f,0.4f);
+            anim.SetTrigger("triggerNear");
         }
         }
     }
 
     IEnumerator FlyDirection(){
-        FlyAway();
+        
         yield return new WaitForSeconds(10f);
         isOnCollider = false;
         // GoToGround();
