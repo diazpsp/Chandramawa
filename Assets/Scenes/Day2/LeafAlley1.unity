@@ -1384,6 +1384,7 @@ Transform:
   - {fileID: 2108592106}
   - {fileID: 698463366}
   - {fileID: 1267856859}
+  - {fileID: 1938323467}
   m_Father: {fileID: 1297270937}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3392,7 +3393,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1783471341}
-  - {fileID: 1938323467}
   m_Father: {fileID: 1297270937}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4757,6 +4757,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1142650138}
     m_Modifications:
+    - target: {fileID: 8562209450198125380, guid: 81013562c47db4a479fb5b05f071c5da, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562209450198125380, guid: 81013562c47db4a479fb5b05f071c5da, type: 3}
+      propertyPath: m_SortingOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562209450198125380, guid: 81013562c47db4a479fb5b05f071c5da, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -781503551
+      objectReference: {fileID: 0}
     - target: {fileID: 8562209450198125382, guid: 81013562c47db4a479fb5b05f071c5da, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4897,23 +4909,23 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1142650138}
+    m_TransformParent: {fileID: 344316365}
     m_Modifications:
     - target: {fileID: 8562209450198125382, guid: 81013562c47db4a479fb5b05f071c5da, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8562209450198125382, guid: 81013562c47db4a479fb5b05f071c5da, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.1327271
+      value: 7.09097
       objectReference: {fileID: 0}
     - target: {fileID: 8562209450198125382, guid: 81013562c47db4a479fb5b05f071c5da, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.1127415
+      value: -0.64256096
       objectReference: {fileID: 0}
     - target: {fileID: 8562209450198125382, guid: 81013562c47db4a479fb5b05f071c5da, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -2.4845288
       objectReference: {fileID: 0}
     - target: {fileID: 8562209450198125382, guid: 81013562c47db4a479fb5b05f071c5da, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4949,7 +4961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8562209450198125387, guid: 81013562c47db4a479fb5b05f071c5da, type: 3}
       propertyPath: parallaxFactor
-      value: 0.05
+      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81013562c47db4a479fb5b05f071c5da, type: 3}

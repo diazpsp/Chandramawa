@@ -52,7 +52,7 @@ public class BirdSystem : MonoBehaviour
         if(gameObject.transform.localScale.x < 0){
         transform.position = Vector2.MoveTowards (transform.position, new Vector2(-12.8f,23.99f), speed * Time.deltaTime);
         }else{
-            transform.position = Vector2.MoveTowards (transform.position, new Vector2(36.93f, 9.53f), speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards (transform.position, new Vector2(36.93f, 22.97f), speed * Time.deltaTime);
         }
         //  bird.velocity = new Vector2(x * speed *Time.deltaTime,y * speed * Time.deltaTime);
         
