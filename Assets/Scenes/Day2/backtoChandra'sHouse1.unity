@@ -822,7 +822,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 807972069
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b935369384c90064a8364bad4de27710, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2186,6 +2186,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 9464cb2301102864b9465ed7f1e43c68, type: 3}
+    - target: {fileID: 7397240341311640629, guid: df1a3680bed0a514097abe4a7f04cc7f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 4401.57
+      objectReference: {fileID: 0}
     - target: {fileID: 8344709278225411196, guid: df1a3680bed0a514097abe4a7f04cc7f, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2631,7 +2635,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1621403815
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 441cb48386df4c944bde1ae186810fcd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4682,6 +4686,7 @@ MonoBehaviour:
   landAudio: {fileID: 4985463197115479608}
   audioJump: {fileID: 4985463197115479609}
   isGroundHard: 0
+  controllerRigidbody: {fileID: 0}
   groundType: 0
   isJumping: 0
   isFalling: 0
