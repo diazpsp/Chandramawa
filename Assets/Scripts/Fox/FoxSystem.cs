@@ -100,6 +100,8 @@ public class FoxSystem : MonoBehaviour
                 StartCoroutine(EAKOS(2));
                 Debug.Log("Move to the left");
             }
+
+            //patrol
             if(!isRightTrigger&&!isLeftTrigger){
                  move = new Vector2(-7 * speedTemp,0)*Time.deltaTime;
                   rb.velocity = move;
@@ -114,7 +116,7 @@ public class FoxSystem : MonoBehaviour
     }
     void Update(){
         // if(Vector2.Distance(transform.position, target.position) < minimumDistance){
-
+            //SEEMS DOESNT USED
         // }
         if(isMoving == true && transform.localScale.x == -1 && isLeftTrigger){
             //kok TRUE semua ya bool nya?
