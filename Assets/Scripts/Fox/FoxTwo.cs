@@ -53,7 +53,7 @@ public class FoxTwo : MonoBehaviour
              
               
              transform.Translate(new Vector2(0f,0f) *Time.deltaTime, Space.Self);
-             Debug.Log("WOISTOP");
+            //  Debug.Log("WOISTOP");
         }
     }
 }

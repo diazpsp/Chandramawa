@@ -110,7 +110,7 @@ public class FoxSystem : MonoBehaviour
                 anim.SetBool("Walking",isIdle);
                 // rb.AddForce(move*speedTemp * Time.deltaTime);
                 StartCoroutine(EAKOS(5));
-                Debug.Log("!isRightTrigger&&!isLeftTrigger");
+                // Debug.Log("!isRightTrigger&&!isLeftTrigger");
             }
         }
     }
@@ -146,7 +146,7 @@ public class FoxSystem : MonoBehaviour
         isLeftTrigger = false;
         isRightTrigger = false;
         anim.SetBool("Walking",isIdle);
-        Debug.Log("MASOK EAKOS");
+        // Debug.Log("MASOK EAKOS");
     }
 
     // void Turn(){
