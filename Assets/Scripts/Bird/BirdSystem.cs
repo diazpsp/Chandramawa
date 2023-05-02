@@ -10,13 +10,16 @@ public class BirdSystem : MonoBehaviour
     private Animator anim;
     public Collider2D collDetect;
     private Rigidbody2D bird;
-     public float x;
-     public float y;
+    public GameObject firstBirdPoint;
+    public float timerForReturn;
+    public float forTimer;
+    public bool isFlyingRight;
     [SerializeField]private GameObject Player;
      private GameObject point1;
      [SerializeField] float range;
      [SerializeField] float maxDistance;
      [SerializeField]private bool isOnCollider = false;
+     Vector2 running;
     //  public Vector2 waypoint;
     //  Vector2 move;
     // Start is called before the first frame update
@@ -24,7 +27,7 @@ public class BirdSystem : MonoBehaviour
     {
         bird = GetComponent<Rigidbody2D>();
        anim = GetComponent<Animator>();
-     
+        firstBirdPoint.SetActive(false);
         point1 = GameObject.FindGameObjectWithTag("Detect");
         // SetNewDestination();
         Player = GameObject.Find("Chandra");
@@ -49,28 +52,68 @@ public class BirdSystem : MonoBehaviour
     //    x = Random.Range(-1, 3);
     //    y = Random.Range(0, 3);
         // move = new Vector2(x,y);
-        if(gameObject.transform.localScale.x < 0){
-        transform.position = Vector2.MoveTowards (transform.position, new Vector2(-12.8f,23.99f), speed * Time.deltaTime);
-        }else{
-            transform.position = Vector2.MoveTowards (transform.position, new Vector2(36.93f, 22.97f), speed * Time.deltaTime);
-        }
+        
         //  bird.velocity = new Vector2(x * speed *Time.deltaTime,y * speed * Time.deltaTime);
         
+        timerForReturn -= Time.deltaTime;
+        if(timerForReturn>1){
+            FlyToDirection();
+        }else{
+            firstBirdPoint.SetActive(true);
+            FlyBack();
+        }
         
+    }
+    public void FlyToDirection(){
+        if(gameObject.transform.localScale.x < 0){
+        transform.position = Vector2.MoveTowards (transform.position, new Vector2(-12.8f,23.99f), speed * Time.deltaTime);
+        isFlyingRight = false;
+        }else{
+            transform.position = Vector2.MoveTowards (transform.position, new Vector2(36.93f, 22.97f), speed * Time.deltaTime);
+            isFlyingRight = true;
+          
+        }
+    }
+
+    public void FlyBack(){
+        transform.position = Vector2.MoveTowards (transform.position, firstBirdPoint.transform.position, speed * Time.deltaTime);
+        if(isFlyingRight){
+            Turning(0.4f);
+            Debug.Log("turning 0.4");
+        }else{
+           Turning(-0.4f);
+           Debug.Log("turning -0.4");
+        }
+
+    } 
+    private void Turning(float scaleX){
+         if(scaleX>0.3f){
+            gameObject.transform.localScale = new Vector3(-0.4f,0.4f,0.4f);
+        }else{
+            gameObject.transform.localScale = new Vector3(0.4f,0.4f,0.4f);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col){
         if(col.gameObject.name == "Chandra"){
+            timerForReturn = forTimer;
             isOnCollider = true;
-            if (Player.transform.localScale.x <0.1){
-            gameObject.transform.localScale = new Vector3(-0.4f,0.4f,0.4f);
-            anim.SetTrigger("triggerNear");
+                if (Player.transform.localScale.x <0.1){
+                    gameObject.transform.localScale = new Vector3(-0.4f,0.4f,0.4f);
+                    Debug.Log("KEKIRI TERUS");
+                
+                    anim.SetBool("isFlying",true);
+                }
+                else {
+                    gameObject.transform.localScale = new Vector3(0.4f,0.4f,0.4f);
+                    Debug.Log("HEYEHEHEE");
+                
+                    anim.SetBool("isFlying",true);
+                }
+        }
+        if(col.gameObject.name == "1stBirdPoint"){
             
-        }
-        else {
-            gameObject.transform.localScale = new Vector3(0.4f,0.4f,0.4f);
-            anim.SetTrigger("triggerNear");
-        }
+            anim.SetBool("isFlying",false);
         }
     }
 

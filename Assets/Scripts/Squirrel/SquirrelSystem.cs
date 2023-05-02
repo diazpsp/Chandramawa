@@ -8,12 +8,14 @@ public class SquirrelSystem : MonoBehaviour
     [SerializeField] private float toIdle;
 
     public GameObject detectorUpRight;
+    public GameObject treeIdleDetectorGO;
     public Rigidbody2D rb;
     public float speed;
    
     public bool isDetector = false;
     public bool isDetectorUp = false;
     public bool isNearPlayer = false;
+    public bool treeIdleDetector = false;
 
     Vector3 rotate;
     Animator anim;
@@ -22,9 +24,11 @@ public class SquirrelSystem : MonoBehaviour
     void Start()
     {
         detectorUpRight = GameObject.Find("DetectorSquirrel2");
+        treeIdleDetectorGO = GameObject.Find("ToIdleDetector");
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         detectorUpRight.SetActive(false);
+        treeIdleDetectorGO.SetActive(false);
     }
 
     // Update is called once per frame
@@ -54,22 +58,40 @@ public class SquirrelSystem : MonoBehaviour
                 }
             }
         }
+        //player mendekat dia lari
         if(isNearPlayer){
-            running = new Vector2(-1* speed,0)*Time.deltaTime;
-            rb.velocity = running;
-            anim.SetBool("Run",true);
-            transform.localScale = new Vector3(-0.55f,0.55f,0.55f);
-            detectorUpRight.SetActive(true);
-
+            if(gameObject.transform.rotation.z < 0){
+                running = new Vector2(0,1* speed)*Time.deltaTime;
+                rb.velocity = running;
+                anim.SetBool("Run",true);
+                transform.localScale = new Vector3(-0.55f,0.55f,0.55f);
+                treeIdleDetectorGO.SetActive(true);
+            }
+            else
+            {
+                running = new Vector2(-1* speed,0)*Time.deltaTime;
+                rb.velocity = running;
+                anim.SetBool("Run",true);
+                transform.localScale = new Vector3(-0.55f,0.55f,0.55f);
+                detectorUpRight.SetActive(true);
+            }
            
         }
+        //jika menyentuh detector di bawah pohon (script detector squirrel up)
         if(isDetectorUp){
                         
-                        gameObject.transform.rotation = Quaternion.Euler(0,0,-90);
-                        running = new Vector2(0,1* speed)*Time.deltaTime;
-                        rb.velocity = running;
-                    }
-        
+            gameObject.transform.rotation = Quaternion.Euler(0,0,-90);
+            running = new Vector2(0,1* speed)*Time.deltaTime;
+            rb.velocity = running;
+            treeIdleDetectorGO.SetActive(true);
+        }
+
+        //buat diem di pohon dari lari
+        if(treeIdleDetector){
+            anim.SetBool("Run",false);
+            running = new Vector2(0,0);
+            rb.velocity = running;
+        }
         
 
     }
@@ -78,6 +100,9 @@ public class SquirrelSystem : MonoBehaviour
     void OnTriggerEnter2D(Collider2D coll){
         if(coll.gameObject.name =="Chandra"){
             isNearPlayer = true;
+        }
+        if(coll.gameObject.name =="ToIdleDetector"){
+            treeIdleDetector = true;
         }
     }
    
