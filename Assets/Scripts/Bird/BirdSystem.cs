@@ -11,9 +11,15 @@ public class BirdSystem : MonoBehaviour
     public Collider2D collDetect;
     private Rigidbody2D bird;
     public GameObject firstBirdPoint;
+    public Transform playerTransB;
+    public FirstBirdPoint firstPoint;
+    // public GameObject firstPointGO;
     public float timerForReturn;
     public float forTimer;
     public bool isFlyingRight;
+    public bool boole = false;
+    public float distancebirdtoplayer;
+    public float distancebirdtoPlayerY;
     [SerializeField]private GameObject Player;
      private GameObject point1;
      [SerializeField] float range;
@@ -27,10 +33,13 @@ public class BirdSystem : MonoBehaviour
     {
         bird = GetComponent<Rigidbody2D>();
        anim = GetComponent<Animator>();
-        firstBirdPoint.SetActive(false);
+        // firstBirdPoint.SetActive(false);
         point1 = GameObject.FindGameObjectWithTag("Detect");
         // SetNewDestination();
+        playerTransB = GameObject.Find("Chandra").transform;
         Player = GameObject.Find("Chandra");
+        // firstPointGO = GameObject.Find("1stBirdPoint");
+        // firstPoint = GetComponent<FirstBirdPoint>();
     }
 
    
@@ -39,13 +48,41 @@ public class BirdSystem : MonoBehaviour
     private void FixedUpdate()
     {
        if(isOnCollider){
-       FlyAway();
+        FlyAway();
        }
-    
+        distancebirdtoplayer = gameObject.transform.position.x - playerTransB.transform.position.x;
+        distancebirdtoPlayerY = gameObject.transform.position.y - playerTransB.transform.position.y;
     }
+    void Update(){
 
-                            //INI DETEKSI KANAN KIRINYA ERROR. KETIKA PLAYER NGADEP KANAN DIA IKUT BERENTI, KETIKA PLAYER NGADEP KIRI DIA LANJUT TERBANG. CEK DI FUNGSI FLYAWAY()
-
+                if (distancebirdtoplayer >= 0f && distancebirdtoplayer <=4f && distancebirdtoPlayerY >=-3f && distancebirdtoPlayerY <=1.8f){
+                    gameObject.transform.localScale = new Vector3(0.4f,0.4f,0.4f);
+                    timerForReturn = forTimer;
+                    isOnCollider = true;
+                
+                    anim.SetBool("isFlying",true);
+                    if(distancebirdtoplayer >= 0f && distancebirdtoplayer <=4f && gameObject.transform.position.y <= -8.41f){
+                        timerForReturn = forTimer;
+                        isOnCollider = true;
+                    Debug.Log("aTAS");
+                        anim.SetBool("isFlying",true);
+                    }
+                }
+                if(distancebirdtoplayer >= -4f && distancebirdtoplayer <0f && distancebirdtoPlayerY >=-3f &&distancebirdtoPlayerY <=1.8f) {
+                    gameObject.transform.localScale = new Vector3(-0.4f,0.4f,0.4f);
+                    timerForReturn = forTimer;
+                    isOnCollider = true;
+                
+                    anim.SetBool("isFlying",true);
+                    if(distancebirdtoplayer >= -4f && distancebirdtoplayer <0f && gameObject.transform.position.y <= -8.41f){
+                        timerForReturn = forTimer;
+                        isOnCollider = true;
+                        Debug.Log("BAWAH");
+                        anim.SetBool("isFlying",true);
+                    }
+                }
+    }
+                       
 
     private void FlyAway()
     {
@@ -64,26 +101,39 @@ public class BirdSystem : MonoBehaviour
         }
         
     }
+    //decides where to fly
     public void FlyToDirection(){
         if(gameObject.transform.localScale.x < 0){
-        transform.position = Vector2.MoveTowards (transform.position, new Vector2(-12.8f,23.99f), speed * Time.deltaTime);
-        isFlyingRight = false;
+            transform.position = Vector2.MoveTowards (transform.position, new Vector2(-12.8f,23.99f), speed * Time.deltaTime);
+            isFlyingRight = false;
+            boole = false;
         }else{
             transform.position = Vector2.MoveTowards (transform.position, new Vector2(36.93f, 22.97f), speed * Time.deltaTime);
             isFlyingRight = true;
+            boole = false;
           
         }
     }
 
     public void FlyBack(){
-        transform.position = Vector2.MoveTowards (transform.position, firstBirdPoint.transform.position, speed * Time.deltaTime);
-        if(isFlyingRight){
-            Turning(0.4f);
-            Debug.Log("turning 0.4");
-        }else{
-           Turning(-0.4f);
-           Debug.Log("turning -0.4");
-        }
+        //jika player masih di pointnya buruing, maka burung tidak akan terbang kebawah, tetapi jika player telah meninggalkan collider point baliknya burung, maka burung akan terbang ke point tsb walaupun player masuk ke collider 1stBirdPoint nya lagi.
+        if(!firstPoint.isChandraHere){
+             boole = true;
+           
+            
+            // if(isFlyingRight){
+            //     Turning(0.4f);
+            //     Debug.Log("turning 0.4");
+            // }else{
+            //     Turning(-0.4f);
+            //     Debug.Log("turning -0.4");
+            // }
+        } 
+         if (boole){
+                transform.position = Vector2.MoveTowards (transform.position, firstBirdPoint.transform.position, speed * Time.deltaTime);
+            }
+        
+        
 
     } 
     private void Turning(float scaleX){
@@ -96,20 +146,8 @@ public class BirdSystem : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col){
         if(col.gameObject.name == "Chandra"){
-            timerForReturn = forTimer;
-            isOnCollider = true;
-                if (Player.transform.localScale.x <0.1){
-                    gameObject.transform.localScale = new Vector3(-0.4f,0.4f,0.4f);
-                    Debug.Log("KEKIRI TERUS");
+            
                 
-                    anim.SetBool("isFlying",true);
-                }
-                else {
-                    gameObject.transform.localScale = new Vector3(0.4f,0.4f,0.4f);
-                    Debug.Log("HEYEHEHEE");
-                
-                    anim.SetBool("isFlying",true);
-                }
         }
         if(col.gameObject.name == "1stBirdPoint"){
             

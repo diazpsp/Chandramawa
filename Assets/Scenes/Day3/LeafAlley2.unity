@@ -2318,9 +2318,14 @@ MonoBehaviour:
   speed: 3
   collDetect: {fileID: 688134208}
   firstBirdPoint: {fileID: 0}
+  playerTransB: {fileID: 0}
+  firstPoint: {fileID: 0}
   timerForReturn: 0
   forTimer: 0
   isFlyingRight: 0
+  boole: 0
+  distancebirdtoplayer: 0
+  distancebirdtoPlayerY: 0
   Player: {fileID: 0}
   range: 0.5
   maxDistance: 6
@@ -3405,6 +3410,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bird 4 Pink_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3431458301241522803, guid: df515bad065879540beb6bd970cdd158, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3431458301241522805, guid: df515bad065879540beb6bd970cdd158, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4400,9 +4409,14 @@ MonoBehaviour:
   speed: 40
   collDetect: {fileID: 1377875144}
   firstBirdPoint: {fileID: 0}
+  playerTransB: {fileID: 0}
+  firstPoint: {fileID: 0}
   timerForReturn: 0
   forTimer: 0
   isFlyingRight: 0
+  boole: 0
+  distancebirdtoplayer: 0
+  distancebirdtoPlayerY: 0
   Player: {fileID: 0}
   range: 0.5
   maxDistance: 6
@@ -4454,6 +4468,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!1 &1386324629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1386324630}
+  m_Layer: 0
+  m_Name: YANG BIRD PAKE DISTANCE BUAT NENTUIN KANAN KIRI DARI PLAYER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1386324630
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386324629}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.109716, y: 6.2846327, z: -0.086341955}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1423486228
 GameObject:
   m_ObjectHideFlags: 0
@@ -5265,6 +5310,7 @@ GameObject:
   - component: {fileID: 1582030549}
   - component: {fileID: 1582030551}
   - component: {fileID: 1582030550}
+  - component: {fileID: 1582030552}
   m_Layer: 0
   m_Name: 1stBirdPoint
   m_TagString: Untagged
@@ -5365,6 +5411,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1582030552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582030548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36c1947bbb0dfd143ab210ac7347b166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isChandraHere: 0
 --- !u!1 &1645501735
 GameObject:
   m_ObjectHideFlags: 0
@@ -5977,6 +6036,10 @@ PrefabInstance:
       propertyPath: forTimer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 9114986947352286550, guid: 3df138c90d9847f43aa5718cf2d25f2c, type: 3}
+      propertyPath: firstPoint
+      value: 
+      objectReference: {fileID: 1582030552}
     - target: {fileID: 9114986947352286550, guid: 3df138c90d9847f43aa5718cf2d25f2c, type: 3}
       propertyPath: firstBirdPoint
       value: 
