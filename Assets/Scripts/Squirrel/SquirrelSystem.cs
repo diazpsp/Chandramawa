@@ -6,6 +6,10 @@ public class SquirrelSystem : MonoBehaviour
 {
     [SerializeField] private float idleTime;
     [SerializeField] private float toIdle;
+    [SerializeField] private float idleToRun;
+    [SerializeField] private float forIdleToRun;
+    [SerializeField] private float timerStartMoving;
+    [SerializeField] private float forTimerStartMoving;
 
     public GameObject detectorUpRight;
     public GameObject treeIdleDetectorGO;
@@ -16,6 +20,7 @@ public class SquirrelSystem : MonoBehaviour
     public bool isDetectorUp = false;
     public bool isNearPlayer = false;
     public bool treeIdleDetector = false;
+    public bool startMoving;
 
     Vector3 rotate;
     Animator anim;
@@ -29,13 +34,33 @@ public class SquirrelSystem : MonoBehaviour
         anim = GetComponent<Animator>();
         detectorUpRight.SetActive(false);
         treeIdleDetectorGO.SetActive(false);
+        timerStartMoving = forTimerStartMoving;
     }
+    //idletime and to idle is independent
 
     // Update is called once per frame
     void Update()
     {
-         
-
+        if(startMoving ){
+            Runaway();
+        }else if(!startMoving && timerStartMoving <0.6f){
+            Roam();
+        }
+       
+        if(timerStartMoving>0){
+            timerStartMoving -= Time.deltaTime;
+            if(timerStartMoving > 0.5f && timerStartMoving < 0.6f){
+                startMoving = true;
+            }
+        }
+        
+        else
+        {   
+            // toIdle = 2f;
+        }
+        NearPlayer();
+    }
+    void Runaway(){
         idleTime -= Time.deltaTime;
         if(idleTime<=0){
             gameObject.transform.rotation = Quaternion.Euler(0,0,-90);
@@ -45,7 +70,7 @@ public class SquirrelSystem : MonoBehaviour
             anim.SetBool("Run",true);
 
             if(isDetector){
-                Debug.Log("ko");
+                // Debug.Log("ko");
                 gameObject.transform.rotation = Quaternion.Euler(0,0,0);
                 toIdle -= Time.deltaTime;
 
@@ -54,11 +79,18 @@ public class SquirrelSystem : MonoBehaviour
                 if(toIdle <=0){
                     anim.SetBool("Run",false);
                     running = new Vector2(0,0);
-                     rb.velocity = running;
+                    rb.velocity = running;
+                    idleToRun = forIdleToRun;
+                    startMoving = false;
+                    
                 }
+                else{}
             }
         }
-        //player mendekat dia lari
+       
+    }
+    void NearPlayer(){
+         //player mendekat dia lari
         if(isNearPlayer){
             if(gameObject.transform.rotation.z < 0){
                 running = new Vector2(0,1* speed)*Time.deltaTime;
@@ -91,11 +123,56 @@ public class SquirrelSystem : MonoBehaviour
             anim.SetBool("Run",false);
             running = new Vector2(0,0);
             rb.velocity = running;
+            timerStartMoving = forTimerStartMoving;
         }
-        
-
     }
 
+    void Run(){
+        if(gameObject.transform.localScale.x >0f){
+            running = new Vector2(1* speed,0)*Time.deltaTime;
+            rb.velocity = running;
+            anim.SetBool("Run",true);
+            
+            if(idleToRun < 0){
+                running = new Vector2(0,0);
+                rb.velocity = running;
+                anim.SetBool("Run",false);
+                if(idleToRun < -2.8f){
+                    transform.localScale = new Vector3(-0.55f,0.55f,0.55f);
+                    idleToRun = forIdleToRun; 
+                    Debug.Log("SEMUANYA");
+                }
+            }
+        }
+        else{
+            running = new Vector2(-1* speed,0)*Time.deltaTime;
+            rb.velocity = running;
+            anim.SetBool("Run",true);
+            
+            if(idleToRun < 0){
+                running = new Vector2(0,0);
+                rb.velocity = running;
+                anim.SetBool("Run",false);
+                if(idleToRun < -2.8f){
+                    transform.localScale = new Vector3(0.55f,0.55f,0.55f);
+                    idleToRun = forIdleToRun;
+                }
+            }
+        }
+    }
+
+    void Roam(){
+        Debug.Log("ROAM");
+        idleToRun -= Time.deltaTime;
+        
+            Run();
+        
+            // anim.SetBool("Run",false);
+            // if(idleToRun <3f){
+            //     Roam();
+            // }
+        
+    }
 
     void OnTriggerEnter2D(Collider2D coll){
         if(coll.gameObject.name =="Chandra"){

@@ -23,7 +23,7 @@ public class DetectorSquirrel : MonoBehaviour
      void OnTriggerEnter2D(Collider2D coll){
         if(coll.gameObject.name == "Squirrel (1)"){
             sqrlSys.isDetector = true;
-            Debug.Log("TRIGER");
+            // Debug.Log("TRIGER");
         }
 
     }
