@@ -77,9 +77,9 @@ public class SquirrelSystem : MonoBehaviour
                 running = new Vector2(1* speed,0)*Time.deltaTime;
                 rb.velocity = running;
                 if(toIdle <=0){
-                    anim.SetBool("Run",false);
-                    running = new Vector2(0,0);
-                    rb.velocity = running;
+                    // anim.SetBool("Run",false);
+                    // running = new Vector2(0,0);
+                    // rb.velocity = running;
                     idleToRun = forIdleToRun;
                     startMoving = false;
                     
@@ -162,7 +162,6 @@ public class SquirrelSystem : MonoBehaviour
     }
 
     void Roam(){
-        Debug.Log("ROAM");
         idleToRun -= Time.deltaTime;
         
             Run();
@@ -173,7 +172,7 @@ public class SquirrelSystem : MonoBehaviour
             // }
         
     }
-
+//first
     void OnTriggerEnter2D(Collider2D coll){
         if(coll.gameObject.name =="Chandra"){
             isNearPlayer = true;

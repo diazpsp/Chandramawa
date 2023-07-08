@@ -91,7 +91,7 @@ public class BirdSystem : MonoBehaviour
         // move = new Vector2(x,y);
         
         //  bird.velocity = new Vector2(x * speed *Time.deltaTime,y * speed * Time.deltaTime);
-        
+    
         timerForReturn -= Time.deltaTime;
         timerForChangeDir -= Time.deltaTime;
         if(timerForReturn>1){
@@ -112,11 +112,11 @@ public class BirdSystem : MonoBehaviour
     public void FlyToDirection(){
         if(gameObject.transform.localScale.x < 0){
             transform.position = Vector2.MoveTowards (transform.position, new Vector2(-12.8f,23.99f), speed * Time.deltaTime);
-           
+            anim.SetBool("isFlying",true);
             boole = false;
         }else{
             transform.position = Vector2.MoveTowards (transform.position, new Vector2(36.93f, 22.97f), speed * Time.deltaTime);
-            
+             anim.SetBool("isFlying",true);
             boole = false;
           
         }
@@ -170,7 +170,7 @@ public class BirdSystem : MonoBehaviour
             
                 
         }
-        if(col.gameObject.name == "1stBirdPoint"){
+        if(col.gameObject.tag == "BirdDetect"){
             
             anim.SetBool("isFlying",false);
             apakahTerbang = false;
@@ -187,11 +187,14 @@ public class BirdSystem : MonoBehaviour
 
      IEnumerator TurningToGround(){
         FlyBack();
+        FlyBack();
+        Debug.Log("IENUM");
+        
+        FlyBack();  
         Debug.Log("IENUM");
         
         yield return new WaitForSeconds(0.4f);
-        Debug.Log("ENEm");
-        
+
     }
 
     //kepake di BIrdDirection
@@ -216,29 +219,29 @@ public class BirdSystem : MonoBehaviour
     void BirdDirection(){
         //menentukan arah burung terbang dengan menentukan dia hadap mana untuk pertama kali.
 
-                if (distancebirdtoplayer >= 0f && distancebirdtoplayer <=4f ){
-                    gameObject.transform.localScale = new Vector3(0.4f,0.4f,0.4f);
-                    isFlyingRight = true;
-                    timerForReturn = forTimer;
-                    isOnCollider = true;
-                    StartCoroutine(FlyDirection());
-                    anim.SetBool("isFlying",true);
-                    // if(distancebirdtoplayer >= 0f && distancebirdtoplayer <=4f && gameObject.transform.position.y <= -8.41f){
-                    //     timerForReturn = forTimer;
-                    //     isOnCollider = true;
-                    // Debug.Log("aTAS");
-                    //     anim.SetBool("isFlying",true);
-                    // }
-                }
-                if(distancebirdtoplayer >= -4f && distancebirdtoplayer <0f ) {
-                    gameObject.transform.localScale = new Vector3(-0.4f,0.4f,0.4f);
-                    timerForReturn = forTimer;
-                    isOnCollider = true;
-                    isFlyingRight = false;
-                    StartCoroutine(FlyDirection());
-                    anim.SetBool("isFlying",true);
-                  
-                }
+        if (distancebirdtoplayer >= 0f && distancebirdtoplayer <=4f && distancebirdtoPlayerY <=1.6f){
+            gameObject.transform.localScale = new Vector3(0.4f,0.4f,0.4f);
+            isFlyingRight = true;
+            timerForReturn = forTimer;
+            isOnCollider = true;
+            StartCoroutine(FlyDirection());
+            anim.SetBool("isFlying",true);
+            // if(distancebirdtoplayer >= 0f && distancebirdtoplayer <=4f && gameObject.transform.position.y <= -8.41f){
+            //     timerForReturn = forTimer;
+            //     isOnCollider = true;
+            // Debug.Log("aTAS");
+            //     anim.SetBool("isFlying",true);
+            // }
+        }
+        if(distancebirdtoplayer >= -4f && distancebirdtoplayer <0f && distancebirdtoPlayerY <=1.6f) {
+            gameObject.transform.localScale = new Vector3(-0.4f,0.4f,0.4f);
+            timerForReturn = forTimer;
+            isOnCollider = true;
+            isFlyingRight = false;
+            StartCoroutine(FlyDirection());
+            anim.SetBool("isFlying",true);
+            
+        }
     }
     // void IsItFlying(){
     //     if(distancebirdtoPlayerY>7.5f){
@@ -251,7 +254,7 @@ public class BirdSystem : MonoBehaviour
 
     //ketika dari atas mau kebawah, tapi ketemu player
     void BirdChangeDirection(){
-        if(distancebirdtoplayer >= -4f && distancebirdtoplayer <=4f && distancebirdtoPlayerY >=-3f && distancebirdtoPlayerY <=7f){
+        if(distancebirdtoplayer >= -4f && distancebirdtoplayer <=4f && distancebirdtoPlayerY >=-3f && distancebirdtoPlayerY <=3f){
             boole = false;
             // boool = false;
             if(!isFlyingRight){
@@ -294,6 +297,7 @@ public class BirdSystem : MonoBehaviour
             // IsItFlying();
                
         }else if(apakahTerbang) {
+            anim.SetBool("isFlying",true);
             BirdChangeDirection();
             Debug.Log("bawah");
         }else{}
