@@ -85,7 +85,7 @@ public class FoxSystem : MonoBehaviour
                     anim.SetBool("Walking",isIdle);
                     // rb.AddForce(move*speedTemp * Time.deltaTime);
                     transform.localScale =new Vector3(1,1,1) ; 
-                    StartCoroutine(EAKOS(2));
+                    StartCoroutine(RoamToIdle(2));
                     disableRightDetector = true;
                     Debug.Log("Move to the right");
 
@@ -97,7 +97,7 @@ public class FoxSystem : MonoBehaviour
                 // move = new Vector2(-10,0);
                 anim.SetBool("Walking",isIdle);
                 // rb.AddForce(move*speedTemp * Time.deltaTime);
-                StartCoroutine(EAKOS(2));
+                StartCoroutine(RoamToIdle(2));
                 Debug.Log("Move to the left");
             }
 
@@ -109,7 +109,7 @@ public class FoxSystem : MonoBehaviour
                 // move = new Vector2(-10,0);
                 anim.SetBool("Walking",isIdle);
                 // rb.AddForce(move*speedTemp * Time.deltaTime);
-                StartCoroutine(EAKOS(5));
+                StartCoroutine(RoamToIdle(5));
                 // Debug.Log("!isRightTrigger&&!isLeftTrigger");
             }
         }
@@ -140,7 +140,7 @@ public class FoxSystem : MonoBehaviour
         //     rb.AddForce(move*speedTemp * Time.deltaTime);
             Debug.Log(":Sea");
     }
-    IEnumerator EAKOS(float time){
+    IEnumerator RoamToIdle(float time){
         yield return new WaitForSeconds(time);
         isIdle = false;
         isLeftTrigger = false;
